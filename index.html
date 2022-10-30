@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript1</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript">
+
+        var tt=new Date();
+        var ay=new Array(12);	ay[0]="Ocak";ay[1]="Şubat";ay[2]="Mart";ay[3]="Nisan";ay[4]="Mayıs";ay[5]="Haziran";ay[6]="Temmuz";ay[7]="Ağustos";ay[8]="Eylül";ay[9]="Ekim";ay[10]="Kasım";ay[11]="Aralık";
+        var gun=new Array(7);	gun[0]="Pazar";gun[1]="Pazartesi";gun[2]="Salı";gun[3]="Çarşamba";gun[4]="Perşembe";gun[5]="Cuma";gun[6]="Cumartesi";
+        </script>
+    
+</head>
+<body>
+    <div class="container"> <i class="fa fa-clipboard-list icon"></i><h1>TO DO LİST</h1>
+    
+    <form action="#">
+       <input type="text" id="inputText">
+        <input type="submit" id="addToDo" value="Add">
+        <input type="submit" id="clearToDo" value="Clear">
+    </form>
+<div class="to-dos" id="toDoContainer">
+
+</div></div>
+<div class="t_menu">
+
+	<div class="t_gun"><script type="text/javascript">document.write(gun[tt.getDay()])</script></div>
+
+	<div class="t_sayi"><script type="text/javascript">document.write(tt.getDate())</script></div>
+
+	<div class="t_tarih"><script type="text/javascript">document.write(ay[tt.getUTCMonth()])</script>  
+    <script type="text/javascript">document.write(tt.getFullYear())</script></div>
+
+</div>
+<style>@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Henny+Penny&family=Splash&display=swap');</style>
+<script src="script.js"></script>
+</body>
+</html>
